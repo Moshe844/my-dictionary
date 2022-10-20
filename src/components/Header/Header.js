@@ -24,13 +24,13 @@ const Header = ({ setCategory, category, word, setWord, LightMode }) => {
   };
   return (
     <div className="header">
-      <span className="title">{word ? word : "My Dictionary"}</span>
+      <span className="title">My Dictionary</span>
       <div className="inputs">
         <ThemeProvider theme={darkTheme}>
           <TextField
             className="search"
             label="Search a word"
-            label="Standard"
+            labels="Standard"
             value={word}
             onChange={(e) => setWord(e.target.value)}
           />
